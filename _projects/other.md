@@ -17,7 +17,7 @@ logo_width: 140
 
 --- 
 
-**CLEAR**: The CANDELS Lyman-alpha Emission At Reionization Experiment (C. Papovich et al.. [HST-GO-14227](http://www.stsci.edu/cgi-bin/get-proposal-info?id=14227&observatory=HST&pi=1)).
+[CLEAR](https://clear.physics.tamu.edu/): The CANDELS Lyman-alpha Emission At Reionization Experiment (C. Papovich et al.. [HST-GO-14227](http://www.stsci.edu/cgi-bin/get-proposal-info?id=14227&observatory=HST&pi=1)).
 
 ---
 
