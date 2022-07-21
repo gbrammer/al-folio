@@ -67,7 +67,11 @@ collections:
     output: true
     permalink: /projects/:path/
     sort_by: order_number
-
+  jwst:
+    output: true
+    permalink: /jwst/:path/
+    sort_by: order_number
+      
 news_limit: 5
 
 # -----------------------------------------------------------------------------
