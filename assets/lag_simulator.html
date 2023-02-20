@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://www.skytopia.com/stuff/lag.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Lag simulator 2018 by zorndyuke &lt;+ me&gt;</title>
+    
+    <!--
+    <style>
+	html, body {
+	  cursor: none;
+	}
+
+	.cursor {
+	  width: 50px;
+	  height: 50px;
+	  background-color: red;
+	  position: absolute;
+	}  
+	-->
+	
+	<style>
+	body {background-color: white;}
+	h1   {color: blue;}
+	p    {color: red;}
+
+		textarea {
+		  cursor: none;
+		}
+
+		
+		.cursor {
+		  width: 25px;
+		  height: 25px;
+		  background-color: red;
+		  position: absolute;
+		}	
+	</style>
+  
+  </head>
+  
+  
+  
+
+  
+  <body bgcolor="#E6E6FA" align="center">
+
+	<div class="cursor" style="transform: translate(0px, 0px);">  </div>
+  
+    <section>
+      <h1 style="font-family:arial; font-size:35px">
+      Lag Simulator Deluxe
+      </h1>
+     (Edited by G. Brammer, original at <a href="https://www.skytopia.com/stuff/lag.html"> https://www.skytopia.com/stuff/lag.html </a>)
+	How long should the lag be (in milliseconds)?:<br>
+	
+	<!--<input id="delay" value="1000">-->
+	<input type="range" min="0" max="5000" value="100" class="slider" id="myRange" style="width:800px"><br>
+	<button onclick="set0()">Set to 0 ms</button>  <button onclick="set50()">Set to 50 ms</button> <button onclick="set100()">Set to 100 ms</button> <button onclick="setMoon()">Set to 1300 ms (Moon)</button> <button onclick="setJWST()">Set to 5000 ms (JWST)</button><br>
+
+	<p id="delay" style="font-family:arial; font-size:22px; font-weight:bold">Lag: 400 ms</p>
+	
+
+	
+      Insert text or move mouse in box below to test the lag / latency:<br>
+      <textarea id="ubisoft" rows="18" cols="120" spellcheck="false"></textarea>
+      <br>
+      <small>(Note, due to Javascript limitations, even set above at 0 milliseconds, the red box (and maybe the text) trails behind the real cursor at around 25-50 milliseconds.)</small><br><br>
+      For more info, see this great video to show how even 10 milliseconds makes a big difference: <a href="https://www.youtube.com/watch?v=vOvQCPLkPt4">https://www.youtube.com/watch?v=vOvQCPLkPt4</a>
+    </section>
+    
+    
+    
+    
+    <script>
+    
+	var slider = document.getElementById("myRange");
+	var output = document.getElementById("delay");
+	output.innerHTML = "Lag: "+slider.value+" ms"; // Display the default slider value
+	
+	function set0() {
+	  slider.value = 0;
+	  output.innerHTML = "Lag: "+slider.value+" ms";
+	}      
+	function set50() {
+	  slider.value = 50;
+	  output.innerHTML = "Lag: "+slider.value+" ms";
+	}      
+	function set100() {
+	  slider.value = 100;
+	  output.innerHTML = "Lag: "+slider.value+" ms";
+	}      
+	function setMoon() {
+	  slider.value = 1300;
+	  output.innerHTML = "Lag: "+slider.value+" ms";
+	}      
+	function setJWST() {
+	  slider.value = 5000;
+	  output.innerHTML = "Lag: "+slider.value+" ms";
+	}      
+	
+
+	// Update the current slider value (each time you drag the slider handle)
+	slider.oninput = function() {
+	  output.innerHTML = "Lag: "+slider.value+" ms";
+	}    
+    
+      
+      var ubisoftServer = document.getElementById('ubisoft');
+      
+      ubisoftServer.onkeydown = simulateLag;
+      
+      
+      function simulateLag(e) {
+      	event.preventDefault();
+        
+      	window.setTimeout((function() {
+        	ubisoftServer.value += e.key;
+        }).bind(e), parseInt(slider.value));
+      	return true;
+      }
+      
+      
+      
+      
+      
+      
+	const cursor = document.querySelector('.cursor');
+	document.addEventListener('mousemove', e => {
+	  setTimeout(() => {
+	    cursor.style.transform = `translate(${e.clientX-20}px, ${e.clientY-20}px)`;
+	  }, slider.value);
+	});      
+
+      
+      
+      
+      
+      
+      
+      
+    </script>
+    
+    <br><small><small><small>Thanks to zorndyuke, sdrmme and vither999 on Reddit for help with implementation</small></small></small>
+  
+
+
+
+
+
+
+
+</body></html>
