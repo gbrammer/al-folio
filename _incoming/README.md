@@ -3,7 +3,7 @@
 
 Usage:
 
-1) Copy a notebook to this directory, or start with the `test-post.ipynb` template.
+1) Copy a notebook to this directory, or copy from the `test-post.ipynb` template.
 
 2) Edit the header in the first source block of the notebook to include *categories* and *tags*, that will then be selectable in the post summary page.  Edit the `TITLE` block as desired, but leave `TIMESTAMP` as-is for the script to populate.
 
