@@ -54,6 +54,10 @@ baseurl:  # should be empty
 
 Note that `_pages/about.md` is built to index.html in the published site. There is therefore no need to have a separate index page for the project. If an index page does exist in the root directory then this will prevent `_pages/about.md` from being added to the built site.
 
+### Posts
+
+Make posts from `jupyter` notebooks by putting notebooks in the [_incoming](https://github.com/gbrammer/gbrammer.github.io/tree/source/_incoming) subdirectory and running the [update_post.sh](https://github.com/gbrammer/gbrammer.github.io/blob/source/_incoming/update_post.sh) script.
+
 ## Features
 
 #### Ergonomic Publications
