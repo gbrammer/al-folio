@@ -3,7 +3,7 @@ layout: page
 title: CANUCS
 description: JWST NIRISS GTO program for distant galaxies
 img: /assets/img/sq_canucs.png
-order_number: 40
+order_number: 20
 ---
 
 <div class="img_row">
@@ -11,6 +11,9 @@ order_number: 40
 </div>
 
 The <b>CA</b>nadian <b>N</b>IRISS <b>U</b>nbiased <b>C</b>luster <b>S</b>urvey (CANUCS) is a component of the NIRISS Guaranteed Time Observations survey that will devote 200 hours to study galaxies lensed by five massive foreground galaxy clusters.  More information to come; targets and observation strategy available at [JWST-GTO 1208](http://www.stsci.edu/jwst/observing-programs/program-information?id=1208).
+
+CANUCS homepage: <a href="https://niriss.github.io/"> https://niriss.github.io/ </a>
+
 
 |  Target   |   RA       | Dec       |
 |-----------|------------|-----------|

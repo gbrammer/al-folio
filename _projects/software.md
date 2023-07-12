@@ -16,9 +16,11 @@ Space telescope data analysis
 [`grizli`](https://www.github.com/gbrammer/grizli) - Comprehensive software 
 pipeline for analyzing space-based imaging and slitless spectroscopy observations.
 
+[`msaexp`](https://github.com/gbrammer/msaexp) - JWST/NIRSpec analysis software
+
 [`golfir`](https://github.com/gbrammer/golfir) - Make *Spitzer* IRAC and MIPS mosaics that work well with `grizli` *Hubble* images.
 
-[`mastquery`](https://www.github.com/gbrammer/mastquery) - Python tools for querying the MAST HST database.  Some tools also for *Spitzer* in [`mastquery.overlaps.spitzer_query`](https://github.com/gbrammer/mastquery/blob/master/mastquery/overlaps.py#L1086).
+[`mastquery`](https://www.github.com/gbrammer/mastquery) - Python tools for querying the MAST database for HST and JWST data.  Some tools also for *Spitzer* in [`mastquery.overlaps.spitzer_query`](https://github.com/gbrammer/mastquery/blob/master/mastquery/overlaps.py#L1086).
 
 [`tristars`](https://www.github.com/gbrammer/tristars) - Asterism matching for astrometric alignment.
 

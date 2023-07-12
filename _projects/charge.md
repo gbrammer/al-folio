@@ -3,7 +3,7 @@ layout: page
 title: CHArGE
 description: Complete Hubble Archive for Galaxy Evolution
 img: /assets/img/sq_hubble.png
-order_number: 10
+order_number: 30
 ---
 
 I am currently leading an effort to perform a uniform processing of all archival *Hubble Space Telescope* imaging and slitless spectroscopy observations relevant for studying distant galaxies (e.g., reasonably high galactic latitudes, avoiding large foreground galaxies, including WFC3/IR).
