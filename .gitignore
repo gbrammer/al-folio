@@ -6,3 +6,5 @@ _site
 Gemfile.lock
 
 _incoming/*ipynb
+
+_incoming/.ipynb_checkpoints*
