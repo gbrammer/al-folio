@@ -36,7 +36,7 @@ Now, you can deploy your website to [GitHub Pages](https://pages.github.com/) by
 ```bash
 $ ./bin/deploy [--user]
 
-$ ./bin/deploy [--user] # Do this for gbrammer.github.io
+$ ./bin/deploy --user # Do this for gbrammer.github.io
 
 ```
 By default, the script uses the `master` branch for the source code and deploys the webpage to `gh-pages`.
